@@ -20,5 +20,5 @@ Utiliza el YARGS 2 que tiene una modificacion en una
   console.log(argv);
 
   crearArchivo(argv.b,argv.l)
-  .then(nombreArchivo => console.log(nombreArchivo,'creado'))
+  .then(nombreArchivo => console.log(nombreArchivo,'creado con exito'))
   .catch(err => console.log(err))

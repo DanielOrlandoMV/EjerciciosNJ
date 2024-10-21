@@ -9,8 +9,8 @@ const crearArchivo = async (base = 6, listar = false, hasta = 10) => {
 
 
         for (let i = 1; i <= hasta; i++) {
-            salida += `${colors.blue(base)} x ${i} = ${base * i}\n`;
-            consola += `${colors.blue(base)} ${'x'.red} ${i} ${'='.bgYellow} ${colors.green(base * i)}\n`;
+            salida += `${base} x ${i} = ${base * i}\n`;
+            consola += `${colors.blue(base)} ${'x'.red} ${colors.blue(i)} ${'='.bgYellow} ${colors.green(base * i)}\n`;
         }
 
         if (listar) {
@@ -21,10 +21,8 @@ const crearArchivo = async (base = 6, listar = false, hasta = 10) => {
         }
 
         
-
-        // Crear el archivo PDF
         const doc = new PDFDocument();
-        const filePath = `../salida/Creacion-tabla-${base}-hasta-${hasta}en-formato.pdf`;
+        const filePath = `../salida/Creacion-tabla-${base}-hasta-${hasta}-en-formato.pdf`;
         doc.pipe(fs.createWriteStream(filePath));
 
        

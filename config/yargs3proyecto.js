@@ -28,7 +28,7 @@ const argv = require('yargs')
         type: 'number',
         demandOption: false,
         default: 15,
-        describe: 'Este es el número límite hasta donde se requiere la tabla'
+        describe: 'Este es el número hasta donde se requiere la tabla'
     })
     
     .check((argv, options) => {

@@ -6,5 +6,5 @@ console.clear();
 console.log(argv)
 
 crearArchivo(argv.b,argv.l)
-.then(nombreArchivo => console.log(nombreArchivo.rainbow,'creado'))
+.then(nombreArchivo => console.log(nombreArchivo.rainbow,'creado con exito'))
 .catch(err => console.error(err))
