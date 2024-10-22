@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 const empleados = [
     {
@@ -67,4 +68,75 @@ getInfoUsuario(id)
     .catch(err => {
         console.log('TODO MAL');
         console.log(err);
+=======
+
+const empleados = [
+    {
+        id: 1,
+        nombre: 'Christian'
+    },
+    {
+        id: 2,
+        nombre: 'tomas'
+    },
+    {
+        id: 3,
+        nombre: 'Zambada'
+    },
+];
+
+const salarios = [
+    {
+        id: 1,
+        salario: 2000
+    },
+    {
+        id: 2,
+        salario: 1500
+    },
+];
+ 
+const getEmpleado = (id) =>{
+    const empleado = empleados.find(e => e.id === id)?.nombre
+    
+    return new Promise((resolve,reject) =>{
+        (empleado)
+        ? resolve(empleado)
+        : reject('No existe el empleado con id ${id}')
+    })
+}
+
+const getSalario = (id) =>{
+    const salario = salarios.find(s => s.id === id)?.salario
+
+    return new Promise((resolve, reject) => {
+        (salario)
+        ? resolve(salario)
+        : reject(`No existe el salario del empleado id ${id}`)
+        
+    })
+}
+
+const getInfoUsuario = async() => {
+    try {
+        const empleado = await getEmpleado(id);
+        const salario = await getSalario(id);
+
+        return `El salario del mpleado: ${empleado} es de ${salario}`
+    } catch (err) {
+        throw err
+    }
+}
+
+const id = 3
+
+getInfoUsuario(id)
+    .then(msg => {
+        console.log('TODO BIEN');
+        console.log(msg)
+    })
+    .catch(err => {
+        console.log('TODO MAL');
+        console.log(err);
+>>>>>>> fdb305fbb70543863e1c8ddc2a118f3706eb940b
     });

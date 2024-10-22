@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Problemas con el var - explique con este ejemplo
 console.log('Trabajando con VAR');
 var nombre = 'Bill'
@@ -30,4 +31,38 @@ if (true) {
     console.log(nombre3);
 }
 
+=======
+// Problemas con el var - explique con este ejemplo
+console.log('Trabajando con VAR');
+var nombre = 'Bill'
+
+if(true){
+    nombre = 'Stve'
+}
+
+console.log(nombre);
+
+// Implementaciones con let
+console.log('Trabajando con LET');
+let nombre2 = 'Dennis'
+
+if (true) {
+    nombre2 = 'Richie'
+    console.log(nombre2);
+}
+
+console.log(nombre2);
+
+// Implementacion de CONST - Explique su ambito
+console.log('uso de constantes');
+
+const nombre3 = 'Woziniak'
+
+if (true) {
+    const nombre3 = 'Pedro'
+
+    console.log(nombre3);
+}
+
+>>>>>>> fdb305fbb70543863e1c8ddc2a118f3706eb940b
 console.log(nombre3);
