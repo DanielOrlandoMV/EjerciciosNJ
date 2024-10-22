@@ -22,10 +22,10 @@ http.createServer((req,res) => {
     res.writeHead(200, {'Content-Type': 'application/csv'})
 
     res.write('id, nombre\n')
-    res.write('1, Antonio\n')
-    res.write('2, Steve\n')
-    res.write('3, Bill\n')
-    res.write('4, Dennis\n')
+    res.write('1, Daniel\n')
+    res.write('2, Royer\n')
+    res.write('3, Juan\n')
+    res.write('4, Alonzo\n')
     res.end();
 })
 .listen(8080)

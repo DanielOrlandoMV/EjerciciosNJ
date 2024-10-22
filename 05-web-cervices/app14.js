@@ -9,7 +9,7 @@ const port=8080
 app.set('view engine', 'hbs')
 
 //uso de parciales "codigo que se repite en mas de un lugar a paginas web"
-hbs.registerPartials(__dirname+'/views/portials')
+hbs.registerPartials(__dirname+'/views/partials')
 
 // servir contenido estatico public3 donde esta el templated
 app.use(express.static('public3'))
@@ -21,8 +21,8 @@ app.use(express.static('public3'))
 
 app.get('/', (req, res) => {
     res.render('home3',{
-        nombre: "Chrisstian Tomas",
-        titulo: "Curso de Node Js"
+        nombre: "Daniel Orlando",
+        titulo: "Curso de Node Js 2024"
     })
 })
 
@@ -33,8 +33,8 @@ app.get('/', (req, res) => {
 
 app.get('/generic', (req, res) => {
     res.render('generic',{
-        nombre: "Chrisstian Tomas",
-        titulo: "Curso de Node Js"
+        nombre: "Daniel Orlando",
+        titulo: "Curso de Node Js 2024"
     })
 })
 
@@ -44,9 +44,9 @@ app.get('/generic', (req, res) => {
  */
 
 app.get('/elements', (req, res) => {
-    res.render('generic',{
-        nombre: "Chrisstian Tomas",
-        titulo: "Curso de Node Js"
+    res.render('elements',{
+        nombre: "Daniel Orlando",
+        titulo: "Curso de Node Js 2024"
     })
 })
 

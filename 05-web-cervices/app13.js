@@ -21,8 +21,8 @@ app.use(express.static('public3'))
 // enviando argumentos desde el controlador al template home2 (pagina renderizada)
 app.get('/', (req, res) => {
     res.render('home2',{
-        nombre: "Chrisstian Tomas",
-        titulo: "Curso de Node Js"
+        nombre: "Daniel Orlando",
+        titulo: "Curso de Node Js 2024"
     })
 })
 

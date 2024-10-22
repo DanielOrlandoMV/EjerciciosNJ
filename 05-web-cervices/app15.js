@@ -7,15 +7,15 @@ const port= process.env.PORT
 
 app.set('view engine','hbs')
 
-hbs.registerPartial(__dirname+'/views/portials')
+hbs.registerPartials(__dirname+'/views/partials')
 
 app.use(express.static('public3'))
 
 //enviando argumentos a home 3
 app.get('/', (req, res) => {
     res.render('home3',{
-        nombre: "Chrisstian Tomas",
-        titulo: "Curso de Node Js"
+        nombre: "Daniel Orlando",
+        titulo: "Curso de Node Js 2024"
     })
 })
 
@@ -26,8 +26,8 @@ app.get('/', (req, res) => {
 
 app.get('/generic', (req, res) => {
     res.render('generic',{
-        nombre: "Chrisstian Tomas",
-        titulo: "Curso de Node Js"
+        nombre: "Daniel Orlando",
+        titulo: "Curso de Node Js 2024"
     })
 })
 
@@ -38,8 +38,8 @@ app.get('/generic', (req, res) => {
 
 app.get('/elements', (req, res) => {
     res.render('elements',{
-        nombre: "Chrisstian Tomas",
-        titulo: "Curso de Node Js"
+        nombre: "Daniel Orlando",
+        titulo: "Curso de Node Js 2024"
     })
 })
 

@@ -38,7 +38,7 @@ http.createServer((req,res) => {
 
     const persona = {
         id: 1,
-        nombre: 'Antonio'
+        nombre: 'Daniel'
     }
 
 
